@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <script src="https://kit.fontawesome.com/f8d23bccab.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addComponents()" id="changeView">
+
+    <div class="header">
+        <div class="headline">
+            <h1>Instagram</h1><img src="img\sun-dark.png" class="sun-dark" id="toggleSun" onclick="toggleDarkMode()"
+                alt="Home">
+        </div>
+        <div><input class="search" id="search" placeholder="Suche" onkeydown="filter()" type="text"> </div>
+        <div class="nav">
+            <img src="img\house-grey.png" class="navImg" alt="Home">
+            <img src="img\pointer-grey.png" class="navImg" alt="Send">
+            <img src="img\plus-grey.png" class="navImg" alt="Add">
+            <img src="img\compass-22.png" class="navImg" alt="Nav">
+            <img src="img\heart-grey.png" class="navImg" alt="Like">
+            <img src="img\IMG-9012.jpg" class="navImgProfile" alt="Profile">
+        </div>
+    </div>
+    <div class="content">
+        <div class="storieboard">
+            <div class="stories">
+                <div class="newReels" id="newReels">
+                    <a class="left" onclick="" id="leftArrow" style="display:none;">❮</a>
+                    <div class="storieReel"><img class="storieProfile" src="img\boxing.jpg"
+                            alt="boxing"><span>Box_Champ</span></div>
+                    <div class="storieReel"><img class="storieProfile" src="img\dog.jpg" alt="dog"><span>Jypsy</span>
+                    </div>
+                    <div class="storieReel"><img class="storieProfile" src="img\man.jpg" alt="man"><span>No_Man</span>
+                    </div>
+                    <div class="storieReel"><img class="storieProfile" src="img\gamer.jpg"
+                            alt="gamer"><span>RealGamer</span></div>
+                    <div class="storieReel"><img class="storieProfile" src="img\butterfly.jpg"
+                            alt="butterfly"><span>fly551</span></div>
+                    <div class="storieReel"><img class="storieProfile" src="img\music.jpg" alt="man"><span>Jo_Man</span>
+                    </div>
+                    <div class="storieReel"><img class="storieProfile" src="img\girl.jpg" alt="girl"><span>Girl</span>
+                    </div>
+                    <div class="storieReel"><img class="storieProfile" src="img\bulldog.jpg"
+                            alt="bulldog"><span>Bulldog</span>
+                    </div>
+                    <a class="right" onclick="" id="rightArrow" style="display:none;">❯</a>
+                </div>
+            </div>
+            <div id="posts">
+            </div>
+        </div>
+
+        <div class="proposalSection">
+            <div class="currentUser">
+                <img class="currentUserProfile" src="img\IMG-9012.jpg" alt="profilimg">
+                <span class="userName">
+                    NikiHo<br>
+                </span>
+                <span class="follow"><b>Switch</b></span>
+            </div>
+            <div class="suggestions">
+                <span>Suggestions for You</span>
+                <span>See All</span>
+            </div>
+            <div class="prop" id="prop">
+            </div>
+            <div class="about">
+                <span>
+                    About Help Press API Jobs Privacy Terms
+                </span>
+                <span>
+                    Location Top Account Hashtags Language
+                </span>
+                <span>
+                    © INSTAGRAMCLONE FROM NIKI
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="footerNav">
+            <div class="footerVisible">
+                <img src="img\IMG-9012.jpg" class="navImgProfileFooter" alt="Profile">
+                <img src="img\house-grey.png" class="navImg" alt="Home">
+                <img src="img\pointer-grey.png" class="navImg" alt="Send">
+            </div>
+            <div class="footerVisible">
+                <img src="img\plus-grey.png" class="navImg" alt="Add">
+                <img src="img\compass-22.png" class="navImg" alt="Nav">
+                <img src="img\heart-grey.png" class="navImg" alt="Like">
+            </div>
+            <div class="imprint">
+                <span><b>Impressum</b></span>
+                <span><b>Datenschutz</b></span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

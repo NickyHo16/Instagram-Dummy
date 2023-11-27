@@ -1,0 +1,696 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.body-dark {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: #151414;
+    color: silver;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px silver;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+}
+
+.sun-dark {
+    width: 40px;
+    height: 40px;
+    padding-left: 40px;
+    /*padding-right: 40px;*/
+
+}
+
+.search {
+    width: 250px;
+    padding: 6px;
+    border: none;
+    background-color: rgb(246, 244, 244);
+    border-radius: 6px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.navImg {
+    width: 25px;
+    height: auto;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.navImgProfile {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, orange, purple) border-box;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/*header end*/
+
+.content {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+/*storieboard start*/
+/*reelstorie start*/
+
+.storieboard {
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.stories {
+    max-width: 600px;
+    height: 140px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: auto;
+    margin-left: 25px;
+    transition: all .5s;
+}
+
+.newReels {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 5px;
+    transition: all .5s;
+}
+
+.storieReel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Slider start*/
+.left {
+    cursor: pointer;
+    height: 25px;
+    width: auto;
+    position: absolute;
+    padding: 16px;
+    color: silver;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    color: aliceblue;
+}
+
+.right {
+    cursor: pointer;
+    height: 25px;
+    width: auto;
+    position: absolute;
+    padding: 16px;
+    color: silver;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    left: 560px;
+    color: aliceblue;
+}
+
+/*Slider end*/
+
+/*reelstorie end*/
+
+/*new Posts start*/
+/*Postsheader start*/
+
+.posts {
+    max-width: 600px;
+    height: auto;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.morePoints {
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newPosts {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.postProfile {
+    display: flex;
+    align-items: center;
+}
+
+.postUserProfile {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.postUserName {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+/*Postsheader end*/
+
+/*Postsmiddle - Picture - start*/
+
+.reelPic {
+    width: 600px;
+    max-width: -webkit-fill-available;
+    object-fit: cover;
+}
+
+/*Postsmiddle - Picture - end*/
+
+/*icons under picutre in the middle start*/
+
+.iconSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postIcons {
+    display: flex;
+    align-items: center;
+}
+
+.iconsImg {
+    width: 25px;
+    height: auto;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.bookmark {
+    width: 40px;
+    height: 25px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+/*icons under picutre in the middle end*/
+
+/*user they liked the post start*/
+
+.likeUserMiniPic {
+    display: flex;
+    align-items: center;
+}
+
+.likeUserSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.likeUserProfile1 {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 1px;
+    z-index: 3;
+    border: 0.1px solid white;
+}
+
+.likeUserProfile2 {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -12px;
+    z-index: 2;
+    border: 0.1px solid white;
+}
+
+.likeUserProfile3 {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -25px;
+    z-index: 1;
+    border: 0.1px solid white;
+}
+
+.likeIt {
+    padding-left: 1px;
+}
+
+/*user they liked the post end*/
+
+/*Post description start*/
+
+.postDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    text-align: justify;
+}
+
+.descriptionProfile {
+    padding-right: 25px;
+}
+
+
+.description {
+    margin-top: 20px;
+
+}
+
+.description-more {
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+#more {
+    display: none;
+}
+
+.myButton:hover {
+    color: silver;
+    cursor: pointer;
+    font-size: bold;
+}
+
+/*Post description end*/
+
+/*view all comments section start*/
+
+.viewCommentProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.viewAllComment {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.viewComments {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: silver;
+    cursor: pointer;
+}
+
+.noneComments {
+    display: none;
+    line-height: 120%;
+}
+
+.dnoneComments {
+    line-height: 1.5;
+}
+
+
+/*view all comments section end*/
+
+/*how long ago was the post - Area- start*/
+
+.daySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.dayProfile {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.dayComment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: silver;
+    cursor: pointer;
+}
+
+/*how long ago was the post - Area- end*/
+
+/*comment - Area- start*/
+
+.commentSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.newCommentSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.newPostComment {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 530px;
+}
+
+.newComments {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.trash {
+    width: 20px;
+    height: auto;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+/*comment - Area- end*/
+
+/*take new post - Area- start*/
+
+.takeNewPostArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid silver;
+    padding-top: 25px;
+}
+
+.addNewCommentPart {
+    display: flex;
+    align-items: center;
+}
+
+
+.textarea {
+    border: none;
+    resize: none;
+    line-height: 2;
+    opacity: 0.8;
+    border-radius: 7px;
+    width: 50vw;
+    max-width: 450px;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+}
+
+.postButton {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6f6fa9;
+    cursor: pointer;
+}
+
+/*take new post - Area- end*/
+
+/*storieboard end*/
+
+/**/
+
+/*proposal start*/
+
+.proposalSection {
+    width: 400px;
+    height: 500px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.storieProfile {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, orange, purple) border-box;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.currentUser {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    padding-right: 55px;
+    padding-left: 40px;
+}
+
+.currentUserProfile {
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(3, 106, 47);
+    cursor: pointer;
+}
+
+.userName {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.follow {
+    color: #6f6fa9;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.proposals {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    align-items: center;
+}
+
+.proposalUserProfile {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.propUserName {
+    font-size: 20px;
+}
+
+.propInfo {
+    font-size: 15px;
+}
+
+.suggestions {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(93, 91, 91);
+    margin-left: 25px;
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about {
+    margin-top: 50px;
+    color: silver;
+    text-align: justify;
+    cursor: pointer;
+}
+
+/*proposal end*/
+/**/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px silver;
+    height: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.navImgProfileFooter {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, orange, purple) border-box;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-left: 7px;
+    margin-right: 9px;
+}
+
+.imprint {
+    display: flex;
+    flex-direction: column;
+    color: silver;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.footerNav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerVisible {
+    display: none;
+}
+
+/*    */
+
+.AddnewPost {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media(max-width: 1020px) {
+    .proposalSection {
+        display: none;
+    }
+
+    .storieboard {
+        width: 87vw;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 880px) {
+    .nav {
+        display: none;
+    }
+
+    .search {
+        margin-right: 25px;
+    }
+
+    .footerVisible {
+        display: flex !important;
+    }
+}
+
+@media(max-width: 740px) {
+    .posts {
+        /*margin-left: 0;*/
+    }
+
+    .stories {
+        /* margin-left: 0;*/
+    }
+
+}
+
+
+@media(max-width: 600px) {
+    .search {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+        /*padding-left: 70px !important;*/
+    }
+}
+
+@media(max-width: 490px) {
+    .content {
+        /*margin-right: 25px;*/
+    }
+
+
+}
+
+@media(max-width: 380px) {
+    .morePoints {
+        display: none;
+    }
+
+    .content {
+        /*margin-right: 25px;*/
+    }
+}
+
+@media(max-width: 297px) {
+    .content {
+        /*margin-right: 10px;*/
+    }
+}
